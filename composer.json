@@ -4,5 +4,8 @@
         "psr-0" : {
             "Vimuths123\\Gitpack" : "src"
         }
+    },
+    "require": {
+        "composer/installers": "~1.0"
     }
 }
