@@ -1,0 +1,20 @@
+<?php
+namespace vimuths123\gitpack;
+
+use Illuminate\Support\ServiceProvider;
+
+class GitpackServiceProvider extends ServiceProvider {
+    public function register() {
+        $this->app->bind('gitpack', function ($app) {
+            return new Gitpack;
+        });
+    }
+    
+    public function boot() {
+        // loading the routes file
+        require __DIR__ . '/Http/routes.php';
+        
+        // define the path for the view files
+        $this->loadViewsFrom(__DIR__ . '/../views', 'gitpack');
+    }
+}
