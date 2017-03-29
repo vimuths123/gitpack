@@ -2,7 +2,7 @@
     "name": "vimuths123/gitpack",
     "autoload": {
         "psr-0" : {
-            "Vimuths123\\Gitpack" : "src"
+            "vimuths123\\gitpack" : "src"
         }
     },
     "require": {
