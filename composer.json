@@ -1,9 +1,9 @@
 {
     "name": "vimuths123/gitpack",
     "autoload": {
-        "psr-0" : {
-            "vimuths123\\gitpack" : "src"
-        }
+        "psr-4" : {
+            "vimuths123\\gitpack\\" : "src" 
+         }
     },
     "require": {
         "composer/installers": "~1.2"
